@@ -18,9 +18,9 @@ class Music extends Model
         return $this->belongsTo(Genre::class);
     }
 
-    public function user(){
+    public function user_creator(){
         
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
  
 }
