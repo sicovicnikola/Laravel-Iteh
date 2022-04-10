@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Music extends Model
 {
     use HasFactory;
-    protected $fillable = ['title', 'author', 'duration'];
+    protected $fillable = ['title', 'author', 'duration','published','genre_id', 'user_id'];
     // protected $guarded = [];
 
 
